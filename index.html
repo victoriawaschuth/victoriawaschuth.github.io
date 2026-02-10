@@ -1,65 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Jinn PlayOn AI Workstation</title>
-
-<style>
-body {
-  margin:0;
-  font-family: system-ui, Arial, sans-serif;
-  background: #292929;
-  color: #e5e7eb;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  height:100vh;
-}
-
-.card {
-  text-align:center;
-  padding:48px;
-  border-radius:18px;
-  background: #343434;
-  box-shadow: 0 0 50px rgba(0,0,0,0.35);
-  max-width: 720px;
-}
-
-h1 {
-  margin-bottom:14px;
-  font-size: 32px;
-}
-
-.tagline {
-  font-size:18px;
-  opacity:0.95;
-  margin-bottom:18px;
-}
-
-.status {
-  opacity:0.75;
-  margin-top:10px;
-  font-size:14px;
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jinn PlayOn Portal</title>
+  <meta name="description" content="Jinn PlayOn Portal — entry point to characters, worlds, generative media, and lab pipelines." />
+  <link rel="stylesheet" href="assets/css/base.css" />
 </head>
-
 <body>
-  <div class="card">
-    <h1>Jinn PlayOn AI Workstation</h1>
+  <div class="container">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Jinn PlayOn Portal">
+        <div class="brand-badge" aria-hidden="true"></div>
+        <div class="brand-title">Jinn PlayOn / Portal</div>
+      </a>
 
-    <div class="tagline">
-      AI Characters • Visual Worlds • Generative Media
-    </div>
+      <nav class="nav" aria-label="Navigation">
+        <a href="index.html">Portal</a>
+        <a href="characters/index.html">Characters</a>
+        <a href="worlds/index.html">Worlds</a>
+        <a href="media/index.html">Media</a>
+        <a href="lab/index.html">Lab</a>
+      </nav>
+    </header>
 
-    <div class="status">
-      Site under construction. Engines warming up.
-    </div>
+    <main>
+      <section class="hero">
+        <div class="kicker">structure • navigation • gravity</div>
+        <h1>Entry point to the universe</h1>
+        <p class="lead">
+          This is the control deck: characters, worlds, generative projects, and the lab of tools & pipelines.
+          Empty is fine. Empty is disciplined.
+        </p>
+      </section>
 
-    <div class="status">
-      Сайт в сборке. Движки прогреваются.
-    </div>
+      <section class="grid" aria-label="Sections">
+        <a class="card" href="characters/index.html">
+          <h2>Characters</h2>
+          <p>Visual cores, bios, triggers, LoRA rules, consistency.</p>
+          <small>Folder: /characters</small>
+        </a>
 
+        <a class="card" href="worlds/index.html">
+          <h2>Worlds</h2>
+          <p>Locations, mythology layers, world rules, scene map.</p>
+          <small>Folder: /worlds</small>
+        </a>
+
+        <a class="card" href="media/index.html">
+          <h2>Media</h2>
+          <p>Shorts, teasers, episodes, style packs, reels.</p>
+          <small>Folder: /media</small>
+        </a>
+
+        <a class="card" href="lab/index.html">
+          <h2>Lab</h2>
+          <p>Pipelines, prompt templates, inpaint, refs, nodes.</p>
+          <small>Folder: /lab</small>
+        </a>
+      </section>
+
+      <div class="footer">Jinn PlayOn Portal — skeleton build</div>
+    </main>
   </div>
+
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
