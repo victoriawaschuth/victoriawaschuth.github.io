@@ -15,12 +15,18 @@ html,body{height:100%}
 
 body{
   margin:0;
-  font-family: "Helvetica Neue",
-  -apple-system,
-  BlinkMacSystemFont,
+  font-family:
+  Inter,
+  system-ui,
+  "Helvetica Neue",
   "Segoe UI",
-  Arial,
   sans-serif;
+
+  .brand-title{
+  font-weight:800;
+  font-size:20px;
+  letter-spacing:0.3px;
+}
   background: var(--bg);
   color:var(--text);
   line-height:1.5;
