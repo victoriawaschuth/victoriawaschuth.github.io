@@ -8,6 +8,16 @@
   --radius:18px;
   --shadow: 0 10px 30px rgba(0,0,0,.35);
   --accent:#FFEB11;
+  --fs-body: 16px;
+  --fs-lead: 18px;
+  --fs-h1: clamp(28px, 3.2vw, 34px);
+  --fs-h2: 18px;
+  --fs-small: 13px;
+}
+html{
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 *{box-sizing:border-box}
@@ -19,6 +29,10 @@ body{
   background: var(--bg);
   color:var(--text);
   line-height:1.5;
+  font-size: var(--fs-body);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
 }
 
 a{color:inherit; text-decoration:none}
@@ -117,9 +131,15 @@ a{color:inherit; text-decoration:none}
   text-transform:uppercase;
 }
 
-h1{margin:.35rem 0 0; font-size:34px; line-height:1.15}
+h1{margin:.35rem 0 0; font-size: var(--fs-h1); line-height:1.15}
 
-.lead{margin:12px 0 0; color:var(--muted); max-width:70ch}
+.lead{
+  margin:12px 0 0;
+  color:var(--muted);
+  max-width:70ch;
+  font-size: var(--fs-lead);
+  line-height: 1.55;
+}
 
 .grid{
   margin-top:18px;
@@ -143,18 +163,23 @@ h1{margin:.35rem 0 0; font-size:34px; line-height:1.15}
   transform: translateY(-2px);
 }
 
-.card h2{margin:0 0 8px; font-size:18px}
-.card p{margin:0; color:var(--muted)}
-.card small{color:rgba(255,255,255,.45)}
-
-.footer{
-  margin:26px 0 10px;
-  color:rgba(255,255,255,.35);
-  font-size:13px;
+.card h2{margin:0 0 8px; font-size: var(--fs-h2)}
+.card p{
+  margin:0;
+  color:var(--muted);
+  font-size: var(--fs-body);
+  line-height: 1.5;
 }
+
+.card small{
+  color:rgba(255,255,255,.45);
+  font-size: var(--fs-small);
+}
+
+
+.footer{ margin:26px 0 10px; color:rgba(255,255,255,.35); font-size: var(--fs-small); }
 
 @media (max-width: 900px){
   .card{grid-column: span 12}
-  h1{font-size:28px}
   .brand{min-width:auto}
 }
