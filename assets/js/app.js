@@ -1,5 +1,5 @@
 (() => {
-  const VERSION = "1";
+  const VERSION = "2";
 
   // CSS
   const css = document.createElement("link");
